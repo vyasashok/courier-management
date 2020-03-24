@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="maven-antrun-" default="main"  >
+<target name="main">
+  <echo message="unzipping file"/>
+  <unzip src="D:\Software1\apache-tomcat-8.0.48\webapps/cm-0.0.1-SNAPSHOT-final.zip" dest="D:\Software1\apache-tomcat-8.0.48\webapps"/>
+  <move file="D:\Software1\apache-tomcat-8.0.48\webapps/cm-rest-service.war" tofile="D:\Software1\apache-tomcat-8.0.48\webapps/cm-rest-service.war"/>
+</target>
+</project>

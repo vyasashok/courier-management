@@ -1,0 +1,8 @@
+2020-03-24 17:24:15,778 INFO o.s.b.StartupInfoLogger [main] Starting CMRestServiceApplication on L10INMUM01D2507 with PID 16196 (D:\courier_management\courier-management\cm-rest-service\target\classes started by asvyas in D:\courier_management\courier-management\cm-rest-service)
+2020-03-24 17:24:15,784 DEBUG o.s.b.StartupInfoLogger [main] Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2020-03-24 17:24:15,784 INFO o.s.b.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-03-24 17:24:20,162 INFO o.s.b.StartupInfoLogger [main] Started CMRestServiceApplication in 4.697 seconds (JVM running for 6.135)
+2020-03-24 17:28:51,290 INFO o.s.b.StartupInfoLogger [main] Starting CMRestServiceApplication on L10INMUM01D2507 with PID 15560 (D:\courier_management\courier-management\cm-rest-service\target\classes started by asvyas in D:\courier_management\courier-management\cm-rest-service)
+2020-03-24 17:28:51,295 DEBUG o.s.b.StartupInfoLogger [main] Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2020-03-24 17:28:51,295 INFO o.s.b.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-03-24 17:28:55,563 INFO o.s.b.StartupInfoLogger [main] Started CMRestServiceApplication in 4.668 seconds (JVM running for 6.047)

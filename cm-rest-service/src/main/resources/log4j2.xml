@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+  <Appenders>
+    <Console name="Console" target="SYSTEM_OUT">
+      <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+    </Console>
+    <RollingFile name="RollingFile" fileName="logs/cmapp.log" filePattern="logs/$${date:yyyy-MM}/app-%d{MM-dd-yyyy}-%i.log.gz">
+	  <PatternLayout>
+	    <pattern>%d %p %C{1.} [%t] %m%n</pattern>
+	  </PatternLayout>
+	  <Policies>
+	    <SizeBasedTriggeringPolicy size="5 MB"/>
+	  </Policies>
+	  <DefaultRolloverStrategy max="10"/>
+	</RollingFile>
+  </Appenders>
+  <Loggers>
+  	<Logger name="com.amazonaws" level="ERROR">
+      <AppenderRef ref="Console"/>
+    </Logger>
+	<Logger name="com.cm" level="DEBUG">
+		<AppenderRef ref="RollingFile"/>
+		<AppenderRef ref="Console"/>
+    </Logger>    
+    <Root level="WARN">
+      <AppenderRef ref="Console"/>
+    </Root>
+  </Loggers>
+</Configuration>
