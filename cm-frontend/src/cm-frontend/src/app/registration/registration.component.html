@@ -1,0 +1,41 @@
+<form [formGroup]="registrationForm" (ngSubmit)="onFormSubmit()">
+
+  <div class="container">
+       <h2 style="text-align: center;">Registration Form</h2>
+  </div>
+
+  <div class="container" style="text-align: center;">
+     <label *ngIf="registrationSuccessMessage" style="color:green;">{{registrationSuccessMessage}}</label>
+     <label *ngIf="registrationErrorMessage" style="color:red;">{{registrationErrorMessage}}</label>
+     <label *ngIf="somethingWentWrongMessage" style="color: red;">{{somethingWentWrongMessage}}</label>
+  </div>
+    
+  <div class="container">
+    <label for="name"><b>Name</b></label>
+    <input type="text" placeholder="Enter name" name="name" formControlName="name">
+    <div *ngIf="name.dirty && name.errors?.required" style="color:red;">Name is required</div>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter email" name="email" formControlName="email">
+    <div *ngIf="email.dirty && email.errors?.required" style="color:red;">Email is required</div>
+    <div *ngIf="email.errors?.email" style="color:red;">Email is not valid</div>
+
+    <label for="phone"><b>Phone</b></label>
+    <input type="text" placeholder="Enter phone" name="phone" formControlName="phone">
+    <div *ngIf="phone.dirty && phone.errors?.required" style="color:red;">Phone is required</div>
+
+    <label for="password"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="password" formControlName="password">
+    <div *ngIf="password.dirty && password.errors?.required" style="color:red;">Password is required</div>
+        
+    <button type="submit" [disabled]="registrationForm.invalid">Save</button>
+  </div>
+
+  <!-- <div class="container" style="background-color:#f1f1f1">
+    <button type="button" class="cancelbtn">Cancel</button>
+  </div> -->
+
+  <div class="container">
+    <a [routerLink]="['/login']">Go to login</a>
+  </div>
+</form>

@@ -6,3 +6,64 @@
 2020-03-24 17:28:51,295 DEBUG o.s.b.StartupInfoLogger [main] Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
 2020-03-24 17:28:51,295 INFO o.s.b.SpringApplication [main] No active profile set, falling back to default profiles: default
 2020-03-24 17:28:55,563 INFO o.s.b.StartupInfoLogger [main] Started CMRestServiceApplication in 4.668 seconds (JVM running for 6.047)
+2020-04-04 11:15:44,407 INFO o.s.b.StartupInfoLogger [main] Starting CMRestServiceApplication on L10INMUM01D2507 with PID 2096 (D:\courier_management\courier-management\cm-rest-service\target\classes started by asvyas in D:\courier_management\courier-management\cm-rest-service)
+2020-04-04 11:15:44,411 DEBUG o.s.b.StartupInfoLogger [main] Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2020-04-04 11:15:44,412 INFO o.s.b.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-04-04 11:15:50,208 INFO o.s.b.StartupInfoLogger [main] Started CMRestServiceApplication in 6.046 seconds (JVM running for 7.052)
+2020-04-04 11:28:56,621 INFO o.s.b.StartupInfoLogger [main] Starting CMRestServiceApplication on L10INMUM01D2507 with PID 6632 (D:\courier_management\courier-management\cm-rest-service\target\classes started by asvyas in D:\courier_management\courier-management\cm-rest-service)
+2020-04-04 11:28:56,626 DEBUG o.s.b.StartupInfoLogger [main] Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2020-04-04 11:28:56,626 INFO o.s.b.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-04-04 11:29:00,232 INFO o.s.b.StartupInfoLogger [main] Started CMRestServiceApplication in 3.847 seconds (JVM running for 4.742)
+2020-04-04 11:31:53,199 INFO o.s.b.StartupInfoLogger [main] Starting CMRestServiceApplication on L10INMUM01D2507 with PID 4040 (D:\courier_management\courier-management\cm-rest-service\target\classes started by asvyas in D:\courier_management\courier-management\cm-rest-service)
+2020-04-04 11:31:53,203 DEBUG o.s.b.StartupInfoLogger [main] Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2020-04-04 11:31:53,203 INFO o.s.b.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-04-04 11:31:55,402 DEBUG o.s.w.f.GenericFilterBean [localhost-startStop-1] Initializing filter 'CORSFilter'
+2020-04-04 11:31:55,402 DEBUG o.s.w.f.GenericFilterBean [localhost-startStop-1] Filter 'CORSFilter' configured successfully
+2020-04-04 11:31:56,719 INFO o.s.b.StartupInfoLogger [main] Started CMRestServiceApplication in 3.764 seconds (JVM running for 4.567)
+2020-04-04 11:35:16,752 DEBUG o.a.i.l.j.BaseJdbcLogger [http-nio-5001-exec-9] ==>  Preparing: insert into user_details(name, email, phone, passwor) values(?, ?, ?, ?) 
+2020-04-04 11:35:17,034 DEBUG o.a.i.l.j.BaseJdbcLogger [http-nio-5001-exec-9] ==> Parameters: ssfsf(String), ddddd@sdsd.fgfgf(String), 121212(String), 12121(String)
+2020-04-04 11:36:16,548 INFO o.s.b.StartupInfoLogger [main] Starting CMRestServiceApplication on L10INMUM01D2507 with PID 2268 (D:\courier_management\courier-management\cm-rest-service\target\classes started by asvyas in D:\courier_management\courier-management\cm-rest-service)
+2020-04-04 11:36:16,553 DEBUG o.s.b.StartupInfoLogger [main] Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2020-04-04 11:36:16,553 INFO o.s.b.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-04-04 11:36:18,882 DEBUG o.s.w.f.GenericFilterBean [localhost-startStop-1] Initializing filter 'CORSFilter'
+2020-04-04 11:36:18,882 DEBUG o.s.w.f.GenericFilterBean [localhost-startStop-1] Filter 'CORSFilter' configured successfully
+2020-04-04 11:36:20,193 INFO o.s.b.StartupInfoLogger [main] Started CMRestServiceApplication in 3.894 seconds (JVM running for 4.847)
+2020-04-04 11:47:09,925 DEBUG o.a.i.l.j.BaseJdbcLogger [http-nio-5001-exec-1] ==>  Preparing: insert into user_details(name, email, phone, password) values(?, ?, ?, ?) 
+2020-04-04 11:47:10,257 DEBUG o.a.i.l.j.BaseJdbcLogger [http-nio-5001-exec-1] ==> Parameters: ssfsf(String), ddddd@sdsd.fgfgf(String), rere@dt.fgfg(String), ikUgnE0b(String)
+2020-04-04 11:47:10,388 DEBUG o.a.i.l.j.BaseJdbcLogger [http-nio-5001-exec-1] <==    Updates: 1
+2020-04-04 11:51:23,978 DEBUG o.a.i.l.j.BaseJdbcLogger [http-nio-5001-exec-4] ==>  Preparing: insert into user_details(name, email, phone, password) values(?, ?, ?, ?) 
+2020-04-04 11:51:23,983 DEBUG o.a.i.l.j.BaseJdbcLogger [http-nio-5001-exec-4] ==> Parameters: ssfsf(String), ddddd@sdsd.fgfgf(String), rere@dt.fgfg(String), ikUgnE0b(String)
+2020-04-04 11:51:24,009 DEBUG o.a.i.l.j.BaseJdbcLogger [http-nio-5001-exec-4] <==    Updates: 1
+2020-04-04 11:51:25,728 DEBUG o.a.i.l.j.BaseJdbcLogger [http-nio-5001-exec-3] ==>  Preparing: insert into user_details(name, email, phone, password) values(?, ?, ?, ?) 
+2020-04-04 11:51:25,731 DEBUG o.a.i.l.j.BaseJdbcLogger [http-nio-5001-exec-3] ==> Parameters: ssfsf(String), ddddd@sdsd.fgfgf(String), rere@dt.fgfg(String), ikUgnE0b(String)
+2020-04-04 11:51:25,761 DEBUG o.a.i.l.j.BaseJdbcLogger [http-nio-5001-exec-3] <==    Updates: 1
+2020-04-04 11:52:41,632 DEBUG o.a.i.l.j.BaseJdbcLogger [http-nio-5001-exec-8] ==>  Preparing: insert into user_details(name, email, phone, password) values(?, ?, ?, ?) 
+2020-04-04 11:52:41,633 DEBUG o.a.i.l.j.BaseJdbcLogger [http-nio-5001-exec-8] ==> Parameters: asas(String), asas@aad.hhgh(String), rere@dt.fgfg(String), ikUgnE0b(String)
+2020-04-04 11:52:41,634 DEBUG o.a.i.l.j.BaseJdbcLogger [http-nio-5001-exec-8] <==    Updates: 1
+2020-04-04 11:53:32,380 INFO o.s.b.StartupInfoLogger [main] Starting CMRestServiceApplication on L10INMUM01D2507 with PID 2484 (D:\courier_management\courier-management\cm-rest-service\target\classes started by asvyas in D:\courier_management\courier-management\cm-rest-service)
+2020-04-04 11:53:32,384 DEBUG o.s.b.StartupInfoLogger [main] Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2020-04-04 11:53:32,384 INFO o.s.b.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-04-04 11:53:34,631 DEBUG o.s.w.f.GenericFilterBean [localhost-startStop-1] Initializing filter 'CORSFilter'
+2020-04-04 11:53:34,631 DEBUG o.s.w.f.GenericFilterBean [localhost-startStop-1] Filter 'CORSFilter' configured successfully
+2020-04-04 11:53:36,258 INFO o.s.b.StartupInfoLogger [main] Started CMRestServiceApplication in 4.133 seconds (JVM running for 5.054)
+2020-04-04 11:54:54,530 DEBUG o.a.i.l.j.BaseJdbcLogger [http-nio-5001-exec-2] ==>  Preparing: insert into user_details(name, email, phone, password) values(?, ?, ?, ?) 
+2020-04-04 11:54:54,557 DEBUG o.a.i.l.j.BaseJdbcLogger [http-nio-5001-exec-2] ==> Parameters: asask(String), asas@aad.hhgh(String), rere@dt.fgfg(String), ikUgnE0b(String)
+2020-04-04 11:54:54,558 DEBUG o.a.i.l.j.BaseJdbcLogger [http-nio-5001-exec-2] <==    Updates: 1
+2020-04-04 17:17:33,464 INFO o.s.b.StartupInfoLogger [main] Starting CMRestServiceApplication on L10INMUM01D2507 with PID 7324 (D:\courier_management\courier-management\cm-rest-service\target\classes started by asvyas in D:\courier_management\courier-management\cm-rest-service)
+2020-04-04 17:17:33,474 DEBUG o.s.b.StartupInfoLogger [main] Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2020-04-04 17:17:33,475 INFO o.s.b.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-04-04 17:17:37,605 DEBUG o.s.w.f.GenericFilterBean [localhost-startStop-1] Initializing filter 'CORSFilter'
+2020-04-04 17:17:37,606 DEBUG o.s.w.f.GenericFilterBean [localhost-startStop-1] Filter 'CORSFilter' configured successfully
+2020-04-04 17:17:40,580 INFO o.s.b.StartupInfoLogger [main] Started CMRestServiceApplication in 7.682 seconds (JVM running for 9.086)
+2020-04-04 17:18:00,043 DEBUG o.a.i.l.j.BaseJdbcLogger [http-nio-5001-exec-2] ==>  Preparing: select user_id from user_details where email=? 
+2020-04-04 17:18:00,120 DEBUG o.a.i.l.j.BaseJdbcLogger [http-nio-5001-exec-2] ==> Parameters: ddddd@sdsd.fgfgf(String)
+2020-04-04 17:18:00,182 DEBUG o.a.i.l.j.BaseJdbcLogger [http-nio-5001-exec-2] <==      Total: 3
+2020-04-04 17:23:04,277 DEBUG o.a.i.l.j.BaseJdbcLogger [http-nio-5001-exec-6] ==>  Preparing: select user_id from user_details where email=? 
+2020-04-04 17:23:04,279 DEBUG o.a.i.l.j.BaseJdbcLogger [http-nio-5001-exec-6] ==> Parameters: ddddd@sdsd.fgfgf(String)
+2020-04-04 17:23:04,281 DEBUG o.a.i.l.j.BaseJdbcLogger [http-nio-5001-exec-6] <==      Total: 3
+2020-04-04 17:23:14,281 DEBUG o.a.i.l.j.BaseJdbcLogger [http-nio-5001-exec-5] ==>  Preparing: select user_id from user_details where email=? 
+2020-04-04 17:23:14,282 DEBUG o.a.i.l.j.BaseJdbcLogger [http-nio-5001-exec-5] ==> Parameters: ddddd@sdsd.fgfgf(String)
+2020-04-04 17:23:14,303 DEBUG o.a.i.l.j.BaseJdbcLogger [http-nio-5001-exec-5] <==      Total: 3
+2020-04-04 17:23:15,616 DEBUG o.a.i.l.j.BaseJdbcLogger [http-nio-5001-exec-4] ==>  Preparing: select user_id from user_details where email=? 
+2020-04-04 17:23:15,617 DEBUG o.a.i.l.j.BaseJdbcLogger [http-nio-5001-exec-4] ==> Parameters: ddddd@sdsd.fgfgf(String)
+2020-04-04 17:23:15,620 DEBUG o.a.i.l.j.BaseJdbcLogger [http-nio-5001-exec-4] <==      Total: 3
