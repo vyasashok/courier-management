@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>New Registration</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<style>
+body {
+	color: rgb(14, 23, 104);
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table, td, th {
+	border: 1px solid black;
+}
+
+th, td {
+	padding: 15px;
+	text-align: center;
+}
+
+.templeteContainer {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0;
+	margin-bottom: 0;
+	max-width: 62.5em;
+	position: relative;
+	padding-left: 0.9375em;
+	padding-right: 0.9375em;
+}
+</style>
+</head>
+<body class="templeteContainer" style="text-align: justify;">
+	Good day,<br></br><br></br> 
+	
+	The user <span th:text="${name}"></span> with email id <span th:text="${email}"></span> has been created.
+
+	
+	<br></br><br></br><br></br><br></br> 
+
+    Note: this email is an automatic notification. Please do not reply directly.
+</body>
+</html>

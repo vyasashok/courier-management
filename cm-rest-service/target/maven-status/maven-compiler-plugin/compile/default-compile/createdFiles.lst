@@ -1,2 +1,4 @@
 com\cm\configuration\MyBatisConfiguration.class
+com\cm\filter\CORSFilter.class
 com\cm\CMRestServiceApplication.class
+com\cm\controller\RegistrationController.class

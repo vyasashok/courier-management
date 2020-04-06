@@ -2,12 +2,20 @@ package com.cm.persistence.domain;
 
 public class RegistrationDTO {
 	
+	private Integer userId;
 	private String name;
 	private String email;
 	private String phone;
 	private String password;
 	
 	
+	
+	public Integer getUserId() {
+		return userId;
+	}
+	public void setUserId(Integer userId) {
+		this.userId = userId;
+	}
 	public String getName() {
 		return name;
 	}
