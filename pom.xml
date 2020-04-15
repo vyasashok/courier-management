@@ -24,5 +24,6 @@
     <module>cm-core</module>
   	<module>cm-rest-service</module>
   	<module>cm-distribution</module>
+  	<module>cm-integration</module>
   </modules>
 </project>

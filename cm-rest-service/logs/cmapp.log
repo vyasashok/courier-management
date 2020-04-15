@@ -694,3 +694,83 @@ th, td {
 2020-04-06 13:27:44,088 DEBUG c.c.c.s.EmailService [http-nio-5001-exec-1] ----------------------------------------------
 2020-04-06 13:27:54,372 DEBUG c.c.c.s.EmailService [http-nio-5001-exec-1] email sent successfully
 2020-04-06 13:27:54,374 DEBUG c.c.c.s.EmailService [http-nio-5001-exec-1] ==============================================
+2020-04-07 15:33:45,498 INFO o.s.b.StartupInfoLogger [main] Starting CMRestServiceApplication on L10INMUM01D2507 with PID 5288 (D:\courier_management\courier-management\cm-rest-service\target\classes started by asvyas in D:\courier_management\courier-management\cm-rest-service)
+2020-04-07 15:33:45,518 DEBUG o.s.b.StartupInfoLogger [main] Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2020-04-07 15:33:45,520 INFO o.s.b.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-04-07 15:33:53,157 DEBUG o.s.w.f.GenericFilterBean [localhost-startStop-1] Initializing filter 'CORSFilter'
+2020-04-07 15:33:53,158 DEBUG o.s.w.f.GenericFilterBean [localhost-startStop-1] Filter 'CORSFilter' configured successfully
+2020-04-07 15:33:56,648 INFO o.s.b.StartupInfoLogger [main] Started CMRestServiceApplication in 12.155 seconds (JVM running for 15.786)
+2020-04-07 15:35:46,076 INFO o.s.b.StartupInfoLogger [main] Starting CMRestServiceApplication on L10INMUM01D2507 with PID 15876 (D:\courier_management\courier-management\cm-rest-service\target\classes started by asvyas in D:\courier_management\courier-management\cm-rest-service)
+2020-04-07 15:35:46,082 DEBUG o.s.b.StartupInfoLogger [main] Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2020-04-07 15:35:46,082 INFO o.s.b.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-04-07 15:35:49,390 DEBUG o.s.w.f.GenericFilterBean [localhost-startStop-1] Initializing filter 'CORSFilter'
+2020-04-07 15:35:49,391 DEBUG o.s.w.f.GenericFilterBean [localhost-startStop-1] Filter 'CORSFilter' configured successfully
+2020-04-07 15:35:51,874 INFO o.s.b.StartupInfoLogger [main] Started CMRestServiceApplication in 6.1 seconds (JVM running for 8.019)
+2020-04-07 15:36:08,941 DEBUG o.a.i.l.j.BaseJdbcLogger [http-nio-5001-exec-1] ==>  Preparing: select user_id from user_details where email=? 
+2020-04-07 15:36:08,976 DEBUG o.a.i.l.j.BaseJdbcLogger [http-nio-5001-exec-1] ==> Parameters: dsds@ddf.gfgf(String)
+2020-04-07 15:36:09,287 DEBUG o.a.i.l.j.BaseJdbcLogger [http-nio-5001-exec-1] <==      Total: 0
+2020-04-07 15:36:20,542 DEBUG o.a.i.l.j.BaseJdbcLogger [http-nio-5001-exec-1] ==>  Preparing: insert into user_details(name, email, phone, password) values(?, ?, ?, ?) 
+2020-04-07 15:36:20,545 DEBUG o.a.i.l.j.BaseJdbcLogger [http-nio-5001-exec-1] ==> Parameters: sadadd(String), dsds@ddf.gfgf(String), 2323(String), 232323(String)
+2020-04-07 15:36:23,895 DEBUG o.a.i.l.j.BaseJdbcLogger [http-nio-5001-exec-1] <==    Updates: 1
+2020-04-07 15:36:23,905 INFO c.c.c.a.a.NotificationAspect [http-nio-5001-exec-1] Notification Event: REGISTRATION
+2020-04-07 15:36:23,914 DEBUG c.c.c.s.EmailService [http-nio-5001-exec-1] creating email content for email template: NEW_REGISTRATION
+2020-04-07 15:36:24,443 DEBUG c.c.c.s.EmailService [http-nio-5001-exec-1] ==============================================
+2020-04-07 15:36:24,444 DEBUG c.c.c.s.EmailService [http-nio-5001-exec-1] FROM: ashokvyas82@gmail.com
+2020-04-07 15:36:24,444 DEBUG c.c.c.s.EmailService [http-nio-5001-exec-1] TO: dsds@ddf.gfgf
+2020-04-07 15:36:24,445 DEBUG c.c.c.s.EmailService [http-nio-5001-exec-1] CC: dsds@ddf.gfgf
+2020-04-07 15:36:24,445 DEBUG c.c.c.s.EmailService [http-nio-5001-exec-1] ----------------------------------------------
+2020-04-07 15:36:24,445 DEBUG c.c.c.s.EmailService [http-nio-5001-exec-1] SUBJECT: New Registration
+2020-04-07 15:36:24,446 DEBUG c.c.c.s.EmailService [http-nio-5001-exec-1] ----------------------------------------------
+2020-04-07 15:36:24,446 DEBUG c.c.c.s.EmailService [http-nio-5001-exec-1] <!DOCTYPE html>
+
+<html>
+<head>
+<title>New Registration</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<style>
+body {
+	color: rgb(14, 23, 104);
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table, td, th {
+	border: 1px solid black;
+}
+
+th, td {
+	padding: 15px;
+	text-align: center;
+}
+
+.templeteContainer {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0;
+	margin-bottom: 0;
+	max-width: 62.5em;
+	position: relative;
+	padding-left: 0.9375em;
+	padding-right: 0.9375em;
+}
+</style>
+</head>
+<body class="templeteContainer" style="text-align: justify;">
+	Good day,<br /><br /> 
+	
+	The user <span>sadadd</span> with email id <span>dsds@ddf.gfgf</span> has been created.
+
+	
+	<br /><br /><br /><br /> 
+
+    Note: this email is an automatic notification. Please do not reply directly.
+</body>
+</html>
+2020-04-07 15:36:24,446 DEBUG c.c.c.s.EmailService [http-nio-5001-exec-1] ----------------------------------------------
+2020-04-07 15:36:34,089 DEBUG c.c.c.s.EmailService [http-nio-5001-exec-1] email sending failed
+2020-04-07 15:36:34,090 DEBUG c.c.c.s.EmailService [http-nio-5001-exec-1] ==============================================
