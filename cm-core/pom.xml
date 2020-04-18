@@ -49,4 +49,5 @@
 			<artifactId>thymeleaf-layout-dialect</artifactId>
 		</dependency>
   </dependencies>
+   <packaging>war</packaging>
 </project>

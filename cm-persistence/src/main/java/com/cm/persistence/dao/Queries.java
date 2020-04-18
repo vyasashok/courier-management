@@ -11,5 +11,11 @@ public interface Queries {
 			String query = "select user_id from user_details where email=#{email}";
 		}
 	}
+	
+	interface authentication {
+		interface getProfileByEmail{
+			String query = "select * from user_details where email=#{email}";
+		}
+	}
 
 }

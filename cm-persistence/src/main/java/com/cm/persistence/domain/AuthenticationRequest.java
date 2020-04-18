@@ -5,27 +5,27 @@ import java.io.Serializable;
 public class AuthenticationRequest implements Serializable{
 	
 	private static final long serialVersionUID = 1L;
-	private String username;
+	private String email;
 	private String password;
 
-	public AuthenticationRequest(String username, String password) {
-		this.username = username;
+	public AuthenticationRequest(String email, String password) {
+		this.email = email;
 		this.password = password;
 	}
 
 	public AuthenticationRequest() {
 	}
 
-	public String getUsername() {
-		return username;
+	public String getEmail() {
+		return email;
 	}
 
 	public String getPassword() {
 		return password;
 	}
 
-	public void setUsername(String username) {
-		this.username = username;
+	public void setEmail(String email) {
+		this.email = email;
 	}
 
 	public void setPassword(String password) {

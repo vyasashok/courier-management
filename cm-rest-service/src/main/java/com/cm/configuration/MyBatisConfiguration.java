@@ -15,6 +15,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Primary;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
+import com.cm.persistence.dao.AuthenticationDao;
 import com.cm.persistence.dao.RegistrationDao;
 
 
@@ -47,6 +48,8 @@ public class MyBatisConfiguration {
 		SqlSessionFactory sqlSessionFactory;
 		sqlSessionFactory = sqlSessionFactoryBean.getObject();
 		sqlSessionFactory.getConfiguration().addMapper(RegistrationDao.class);
+		sqlSessionFactory.getConfiguration().addMapper(AuthenticationDao.class);
+		
 		return sqlSessionFactoryBean;
 	}
 	
@@ -57,6 +60,15 @@ public class MyBatisConfiguration {
 		registrationMFB.setSqlSessionFactory(sessionFactoryBean.getObject());
 		registrationMFB.setMapperInterface(RegistrationDao.class);
 		return registrationMFB;
+	}
+	
+	@Bean
+	public MapperFactoryBean<AuthenticationDao> authenticationMapper(
+			@Named(CMSESSIONFACTORYBEAN) final SqlSessionFactoryBean sessionFactoryBean) throws Exception {
+		MapperFactoryBean<AuthenticationDao> authenticationMFB = new MapperFactoryBean<AuthenticationDao>();
+		authenticationMFB.setSqlSessionFactory(sessionFactoryBean.getObject());
+		authenticationMFB.setMapperInterface(AuthenticationDao.class);
+		return authenticationMFB;
 	}
 
 }
