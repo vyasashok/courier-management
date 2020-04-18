@@ -7,7 +7,6 @@
   </parent>
   <groupId>com.cm.courier-management-integration</groupId>
   <artifactId>cm-integration</artifactId>
-  <packaging>war</packaging>
   
   <dependencies>
   	<dependency>
