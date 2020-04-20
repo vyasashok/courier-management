@@ -83,7 +83,7 @@ public class AuthenticationService {
 				token = JwtUtils.generateHMACToken(username, authentication.getAuthorities(), secret,
 						expirationInMinutes);
 				session.setAttribute(LOGIN_TOKEN, token);
-				logger.debug("profile before mychronos: " + username);
+	
 				isTokenValid = "true";
 			}
 			jwtuser.setUsername(username);
