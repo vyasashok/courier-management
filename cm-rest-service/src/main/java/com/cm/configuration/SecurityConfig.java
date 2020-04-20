@@ -34,7 +34,7 @@ import com.cm.filter.SecurityAuthenticationEntryPoint;
 
 @EnableWebSecurity
 @EnableGlobalMethodSecurity(prePostEnabled = true)
-public class SecurityConfig extends WebSecurityConfigurerAdapter{
+public class SecurityConfig extends WebSecurityConfigurerAdapter {
 	
 
 	
@@ -144,13 +144,13 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter{
 				 * All access to the authentication service are permitted
 				 * without authentication (actually as anonymous)
 				 */
-				 .antMatchers(" ").permitAll()
+				 .antMatchers("/api/login/authenticate").permitAll()
 //				.antMatchers(unsecureduris).permitAll()
 				/*
 				 * All the other requests need an authentication. Role access is
 				 * done on Methods using annotations like @PreAuthorize
 				 */
-				.anyRequest().authenticated();
+	        	.anyRequest().authenticated();
 	}
 
 	private JwtTokenAuthenticationFilter jwtTokenAuthenticationFilter(String path, String secret) {

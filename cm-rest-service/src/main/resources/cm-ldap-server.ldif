@@ -34,15 +34,15 @@ objectclass: top
 objectclass: organizationalUnit
 ou: otherpeople
 
-dn: uid=ben,ou=people,dc=springframework,dc=org
+dn: uid=ashok,ou=people,dc=springframework,dc=org
 objectclass: top
 objectclass: person
 objectclass: organizationalPerson
 objectclass: inetOrgPerson
-cn: Ben Alex
-sn: Alex
-uid: ben
-userPassword: $2a$10$c6bSeWPhg06xB1lvmaWNNe4NROmZiSpYhlocU/98HNr2MhIOiSt36
+cn: Ashok,Vyas
+sn: Vyas
+uid: ashok
+userPassword: ashokvyas
 
 dn: uid=bob,ou=people,dc=springframework,dc=org
 objectclass: top
@@ -99,9 +99,9 @@ objectclass: top
 objectclass: person
 objectclass: organizationalPerson
 objectclass: inetOrgPerson
-cn: Space Cadet
-sn: Cadet
-uid: space cadet
+cn: Ashok VYAS
+sn: VYAS
+uid: ashok vyas
 userPassword: spacecadetspassword
 
 

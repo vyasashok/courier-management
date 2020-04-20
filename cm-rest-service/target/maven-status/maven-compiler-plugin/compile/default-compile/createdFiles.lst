@@ -1,4 +1,10 @@
-com\cm\configuration\MyBatisConfiguration.class
 com\cm\filter\CORSFilter.class
 com\cm\CMRestServiceApplication.class
 com\cm\controller\RegistrationController.class
+com\cm\filter\JwtTokenAuthenticationFilter.class
+com\cm\filter\SecurityAuthenticationEntryPoint.class
+com\cm\configuration\SecurityConfig.class
+com\cm\configuration\MyBatisConfiguration.class
+com\cm\configuration\SecurityConfig$1MyLdapAuthoritiesPopulator.class
+com\cm\filter\RestAccessDeniedHandler.class
+com\cm\controller\LoginController.class

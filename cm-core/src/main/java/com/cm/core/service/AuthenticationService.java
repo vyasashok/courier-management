@@ -2,6 +2,7 @@ package com.cm.core.service;
 
 import java.io.IOException;
 import java.nio.charset.Charset;
+import java.util.Date;
 
 import javax.naming.AuthenticationException;
 import javax.servlet.http.HttpServletRequest;
@@ -57,8 +58,7 @@ public class AuthenticationService {
 		String token = "";
 		int expirationInMinutes = expirationTimeinMinutes;
 		
-		String secret = IOUtils.toString(getClass().getClassLoader().getResourceAsStream("secret.key"),
-				Charset.defaultCharset());
+
 		
 		Profile profile = authenticationDao.getProfileByEmail(email);
 		
@@ -66,21 +66,43 @@ public class AuthenticationService {
 			throw new RuntimeException("User is not authorized");
 		}
 		
+		String username = profile.getName();
 		JwtUser jwtuser = ldapService.getUserDetails(profile.getName());
 		
-		Authentication authentication = this.authenticationManager
-				.authenticate(new UsernamePasswordAuthenticationToken(profile.getName(), password));
-		SecurityContextHolder.getContext().setAuthentication(authentication);
 		
-		
-		token = JwtUtils.generateHMACToken(email, authentication.getAuthorities(), secret,
-				expirationInMinutes);
-		session.setAttribute(LOGIN_TOKEN, token);
-		//logger.debug("profile before mychronos: " + email);
-		isTokenValid = "true";
-		
-		return new AuthenticationResponse(token, jwtuser.getFirstName(), isTokenValid);
+		try {
+			Authentication authentication = this.authenticationManager
+					.authenticate(new UsernamePasswordAuthenticationToken(username, password));
+			SecurityContextHolder.getContext().setAuthentication(authentication);
 
+			String secret = IOUtils.toString(getClass().getClassLoader().getResourceAsStream("secret.key"),
+					Charset.defaultCharset());
+
+			if (jwtuser != null) {
+
+				token = JwtUtils.generateHMACToken(username, authentication.getAuthorities(), secret,
+						expirationInMinutes);
+				session.setAttribute(LOGIN_TOKEN, token);
+				logger.debug("profile before mychronos: " + username);
+				isTokenValid = "true";
+			}
+			jwtuser.setUsername(username);
+			jwtuser.setCreationDate(new Date());
+			
+
+			logger.debug("fullname************************************************::::" + jwtuser.getFirstName() + ""
+					+ jwtuser.getLastName());
+			logger.debug("Email************************************************::::" + jwtuser.getEmail());
+			return new AuthenticationResponse(token, jwtuser.getFirstName() + "" + jwtuser.getLastName(),
+					isTokenValid);
+		} catch (Exception e) {
+			e.printStackTrace();
+			isTokenValid = "false";
+			return new AuthenticationResponse(token, jwtuser.getFirstName() + "" + jwtuser.getLastName(),
+					isTokenValid);
+
+		}
 		
+				
 	}
 }
