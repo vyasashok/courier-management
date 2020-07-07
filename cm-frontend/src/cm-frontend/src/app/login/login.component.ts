@@ -2,6 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, FormArray, Validators, FormBuilder } from '@angular/forms';
 import {LoginService} from '../services/login.service';
 import{LoginDTO} from '../dto/loginDTO';
+import {UserDTO} from '../dto/userDTO';
+import {LocalStorageService} from '../services/local-storage.service';
+import { Routes, Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -12,8 +15,12 @@ export class LoginComponent implements OnInit {
 
   loginForm:FormGroup;
   loginDTO:LoginDTO;
+  userDTO:UserDTO;
 
-  constructor(private formBuilder:FormBuilder, private loginService:LoginService) { 
+  constructor(private formBuilder:FormBuilder, 
+              private loginService:LoginService, 
+              private localStorageService:LocalStorageService,
+              private router:Router) { 
 
   }
 
@@ -28,8 +35,8 @@ export class LoginComponent implements OnInit {
     })
   }
 
-  get name(){
-    return this.loginForm.get('name');
+  get password(){
+    return this.loginForm.get('password');
   }
 
   get email(){
@@ -43,7 +50,17 @@ export class LoginComponent implements OnInit {
     this.loginDTO._email = this.loginForm.value.email;
     
     this.loginService.login(this.loginDTO).subscribe((response)=>{
-      console.log(response.json())
+
+      this.userDTO = new UserDTO();
+
+      this.userDTO._name = response.json().name;
+      this.userDTO._token = response.json().token;
+      this.userDTO._isTokenValid = response.json().tokenValid;
+
+      if(this.userDTO._isTokenValid){
+            this.localStorageService.setToken(this.userDTO._token);
+            this.router.navigate(["/dashboard"]);
+      }
     })
   }
 

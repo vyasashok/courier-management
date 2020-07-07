@@ -1,6 +1,7 @@
 com\cm\persistence\dao\Queries$authentication.class
 com\cm\persistence\domain\courierManagementDTO.class
 com\cm\persistence\domain\AuthenticationResponse.class
+com\cm\persistence\domain\Person.class
 com\cm\persistence\dao\AuthenticationDao.class
 com\cm\persistence\domain\Profile.class
 com\cm\persistence\domain\MailDTO.class

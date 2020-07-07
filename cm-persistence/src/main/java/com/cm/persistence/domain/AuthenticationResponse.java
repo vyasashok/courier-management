@@ -7,13 +7,13 @@ public class AuthenticationResponse implements Serializable {
 	private static final long serialVersionUID = 1L;
 	private String token;
 	private String name;
-	private String isTokenValid;
+	private boolean isTokenValid;
 
-	public AuthenticationResponse(String token, String name, String isTokenValid) {
+	public AuthenticationResponse(String token, String name, boolean isTokenValid) {
 		super();
 		this.token = token;
 		this.name = name;
-		this.isTokenValid = isTokenValid;
+		this.setTokenValid(isTokenValid);
 	}
 
 	/**
@@ -45,16 +45,12 @@ public class AuthenticationResponse implements Serializable {
 		this.name = userFullName;
 	}
 
-
-
-	public String getIsTokenValid() {
+	public boolean isTokenValid() {
 		return isTokenValid;
 	}
 
-	public void setIsTokenValid(String isTokenValid) {
+	public void setTokenValid(boolean isTokenValid) {
 		this.isTokenValid = isTokenValid;
 	}
-	
-	
 
 }

@@ -27,6 +27,9 @@
     <label for="password"><b>Password</b></label>
     <input type="password" placeholder="Enter Password" name="password" formControlName="password">
     <div *ngIf="password.dirty && password.errors?.required" style="color:red;">Password is required</div>
+
+    <label for="file"><b>Upload File</b></label>
+    <input type="file" name="upload" (change)="uploadFile($event.target.files)">
         
     <button type="submit" [disabled]="registrationForm.invalid">Save</button>
   </div>

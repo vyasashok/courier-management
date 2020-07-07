@@ -15,5 +15,9 @@ export class RegistrationService {
        return this.cmRestService.registerNewUser(registrationObject);
   }
 
+  uploadFile(file): Observable<Response>{
+    return this.cmRestService.uploadFile(file);
+  }
+
 
 }

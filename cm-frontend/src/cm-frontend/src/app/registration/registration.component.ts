@@ -86,6 +86,15 @@ export class RegistrationComponent implements OnInit, OnDestroy {
     })
   }
 
+  uploadFile(file){
+
+    let formData = new FormData();
+    formData.append("file", file[0]);
+    this.registrationService.uploadFile(formData).subscribe(response=>{
+
+    })
+  }
+
   ngOnDestroy(){
     this.registartionFormSubscription.unsubscribe();
   }

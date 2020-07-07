@@ -29,4 +29,8 @@ export class CMRestServices {
   login(loginObject:LoginDTO): Observable<Response>{
     return this.http.post(this.serverUrl + '/login/authenticate', loginObject, {headers:this.header});
   }
+
+  uploadFile(file:any):Observable<Response>{
+    return this.http.post(this.serverUrl + '/file/uploadfile', file);
+  }
 }

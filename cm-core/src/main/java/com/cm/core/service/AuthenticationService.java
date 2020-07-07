@@ -54,7 +54,7 @@ public class AuthenticationService {
 		
 		String email = authenticationRequest.getEmail();
 		String password = authenticationRequest.getPassword();
-		String isTokenValid = "";
+		boolean isTokenValid = false;
 		String token = "";
 		int expirationInMinutes = expirationTimeinMinutes;
 		
@@ -84,7 +84,7 @@ public class AuthenticationService {
 						expirationInMinutes);
 				session.setAttribute(LOGIN_TOKEN, token);
 	
-				isTokenValid = "true";
+				isTokenValid = true;
 			}
 			jwtuser.setUsername(username);
 			jwtuser.setCreationDate(new Date());
@@ -97,7 +97,7 @@ public class AuthenticationService {
 					isTokenValid);
 		} catch (Exception e) {
 			e.printStackTrace();
-			isTokenValid = "false";
+			isTokenValid = false;
 			return new AuthenticationResponse(token, jwtuser.getFirstName() + "" + jwtuser.getLastName(),
 					isTokenValid);
 

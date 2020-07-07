@@ -8,12 +8,14 @@ import { LoginComponent } from './login/login.component';
 import { ReactiveFormsModule }    from '@angular/forms'; 
 import { HttpClientModule } from '@angular/common/http';
 import { HttpModule, Http, XHRBackend, RequestOptions } from '@angular/http';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     RegistrationComponent,
-    LoginComponent
+    LoginComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,

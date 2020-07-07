@@ -144,7 +144,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 				 * All access to the authentication service are permitted
 				 * without authentication (actually as anonymous)
 				 */
-				 .antMatchers("/api/login/authenticate").permitAll()
+				 .antMatchers("/api/login/authenticate", "/api/registration/save", "/api/file/uploadfile", "/sns/createTopic", "/sns/publish").permitAll()
 //				.antMatchers(unsecureduris).permitAll()
 				/*
 				 * All the other requests need an authentication. Role access is

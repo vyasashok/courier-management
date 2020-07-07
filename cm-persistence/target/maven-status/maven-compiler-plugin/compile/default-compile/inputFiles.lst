@@ -2,6 +2,7 @@ D:\cm2\courier-management\cm-persistence\src\main\java\com\cm\persistence\domain
 D:\cm2\courier-management\cm-persistence\src\main\java\com\cm\persistence\dao\Queries.java
 D:\cm2\courier-management\cm-persistence\src\main\java\com\cm\persistence\domain\AuthenticationRequest.java
 D:\cm2\courier-management\cm-persistence\src\main\java\com\cm\persistence\domain\RegistrationDTO.java
+D:\cm2\courier-management\cm-persistence\src\main\java\com\cm\persistence\domain\Person.java
 D:\cm2\courier-management\cm-persistence\src\main\java\com\cm\persistence\domain\courierManagementDTO.java
 D:\cm2\courier-management\cm-persistence\src\main\java\com\cm\persistence\dao\RegistrationDao.java
 D:\cm2\courier-management\cm-persistence\src\main\java\com\cm\persistence\domain\AuthenticationResponse.java
